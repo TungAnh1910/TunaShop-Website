@@ -1,0 +1,40 @@
+//---------------------- Mixin -----------------------------
+.transform (@translate) {
+    transform: @translate;
+    -webkit-transform: @translate;
+    -o-transform: @translate;
+    -ms-transform: @translate;
+    -moz-transform: @translate;
+}
+
+.transit (@attr, @sec) {
+    transition: @attr, @sec;
+    -webkit-transition: @attr, @sec;
+    -o-transition: @attr, @sec;
+    -ms-transition: @attr, @sec;
+    -moz-transition: @attr, @sec;
+}
+
+.font(@font, @font-size, @font-weight){
+    font-family: @font;
+    font-size: @font-size;
+    font-weight: @font-weight;
+}
+
+//---flexbox
+.flex(){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+//loai bo mui ten cua select
+.appearance(@canet){
+    appearance: @canet;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+.col(@width){
+    width: @width;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
